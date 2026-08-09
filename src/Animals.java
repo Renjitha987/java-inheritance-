@@ -1,19 +1,29 @@
-class Animal{
-    public void eat(){
-        System.out.println("animal is eating");}
-    public void sleep(){
-        System.out.println("animal is sleeping");}
-}
-class Dog extends Animal{
-    public void bark(){
-        System.out.println("animal is barking");}
+class Animal1 {
 
+    public void eat() {
+        System.out.println("Animal is eating");
+    }
+
+    public void sleep() {
+        System.out.println("Animal is sleeping");
+    }
 }
-public class Animals
-{
-    public static void main(String[]args){
-        Dog d=new Dog();
+
+class Dog1 extends Animal1 {
+
+    public void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+public class Animals {
+
+    public static void main(String[] args) {
+
+        Dog1 d = new Dog1();
+
         d.eat();
         d.sleep();
         d.bark();
-    }}
+    }
+}
